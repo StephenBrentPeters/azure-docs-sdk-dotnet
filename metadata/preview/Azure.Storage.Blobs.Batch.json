@@ -1,7 +1,7 @@
 {
   "Name": "Azure.Storage.Blobs.Batch",
-  "Version": "12.9.0-alpha.20220428.1",
-  "DevVersion": "12.9.0-alpha.20220428.1",
+  "Version": "12.9.0-alpha.20220428.2",
+  "DevVersion": "12.9.0-alpha.20220428.2",
   "DirectoryPath": "sdk/storage/Azure.Storage.Blobs.Batch",
   "ServiceDirectory": "storage",
   "ReadMePath": "sdk/storage/Azure.Storage.Blobs.Batch/README.md",
