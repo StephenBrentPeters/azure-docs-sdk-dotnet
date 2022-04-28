@@ -1,17 +1,14 @@
 ---
 title: Azure Cognitive Services Text Analytics client library for .NET
 keywords: Azure, dotnet, SDK, API, Azure.AI.TextAnalytics, textanalytics
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 11/02/2021
+author: kinelski
+ms.author: camaiaor
+ms.date: 04/28/2022
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: textanalytics
 ---
-
-# Azure Cognitive Services Text Analytics client library for .NET - Version 5.2.0-beta.2 
+# Azure Cognitive Services Text Analytics client library for .NET - Version 5.2.0-alpha.20220428.1 
 
 Azure Cognitive Services Text Analytics is a cloud service that provides advanced natural language processing over raw text, and includes the following main features: 
 * Language Detection
@@ -39,9 +36,9 @@ This table shows the relationship between SDK versions and supported API version
 |SDK version|Supported API version of service
 |-|- |
 |5.2.0-beta.2 | 3.0, 3.1, 3.2-preview.2 (default)
-|5.1.0  | 3.0, 3.1 (default)
+|5.1.X  | 3.0, 3.1 (default)
 |5.0.0  | 3.0
-|1.0.X | 3.0
+|1.0.X  | 3.0
 
 ### Prerequisites
 * An [Azure subscription][azure_sub].
@@ -107,8 +104,8 @@ Client API key authentication is used in most of the examples in this getting st
 To use the [DefaultAzureCredential][DefaultAzureCredential] provider shown below,
 or other credential providers provided with the Azure SDK, please install the Azure.Identity package:
 
-```PowerShell
-Install-Package Azure.Identity
+```dotnetcli
+dotnet add package Azure.Identity
 ```
 
 You will also need to [register a new AAD application][register_aad_app] and [grant access][aad_grant_access] to Text Analytics by assigning the `"Cognitive Services User"` role to your service principal.
@@ -138,7 +135,7 @@ For each supported operation, `TextAnalyticsClient` provides a method that accep
 Return values, such as `AnalyzeSentimentResult`, is the result of a Text Analytics operation, containing a prediction or predictions about a single document.  An operation's return value also may optionally include information about the document and how it was processed.
 
 ### Return value Collection
-A Return value collection, such as `AnalyzeSentimentResultCollection`, is a collection of operation results, where each corresponds to one of the documents provided in the input batch.  A document and its result will have the same index in the input and result collections. The return value also contains a `HasError` property that allows to identify if an operation executed was succesful or unsuccesful for the given document. It may optionally include information about the document batch and how it was processed.
+A Return value collection, such as `AnalyzeSentimentResultCollection`, is a collection of operation results, where each corresponds to one of the documents provided in the input batch.  A document and its result will have the same index in the input and result collections. The return value also contains a `HasError` property that allows to identify if an operation executed was successful or unsuccessful for the given document. It may optionally include information about the document batch and how it was processed.
 
 ### Long-Running Operations
 
@@ -151,11 +148,11 @@ We guarantee that all client instance methods are thread-safe and independent of
 
 ### Additional concepts
 <!-- CLIENT COMMON BAR -->
-[Client options](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.TextAnalytics_5.2.0-beta.2/sdk/core/Azure.Core/README.md#configuring-service-clients-using-clientoptions) |
-[Accessing the response](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.TextAnalytics_5.2.0-beta.2/sdk/core/Azure.Core/README.md#accessing-http-response-details-using-responset) |
-[Handling failures](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.TextAnalytics_5.2.0-beta.2/sdk/core/Azure.Core/README.md#reporting-errors-requestfailedexception) |
-[Diagnostics](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.TextAnalytics_5.2.0-beta.2/sdk/core/Azure.Core/samples/Diagnostics.md) |
-[Mocking](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.TextAnalytics_5.2.0-beta.2/sdk/core/Azure.Core/README.md#mocking) |
+[Client options](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/README.md#configuring-service-clients-using-clientoptions) |
+[Accessing the response](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/README.md#accessing-http-response-details-using-responset) |
+[Handling failures](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/README.md#reporting-errors-requestfailedexception) |
+[Diagnostics](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/Diagnostics.md) |
+[Mocking](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/README.md#mocking) |
 [Client lifetime](https://devblogs.microsoft.com/azure-sdk/lifetime-management-and-thread-safety-guarantees-of-azure-sdk-net-clients/)
 <!-- CLIENT COMMON BAR -->
 
@@ -806,52 +803,52 @@ This project has adopted the [Microsoft Open Source Code of Conduct][code_of_con
 
 
 <!-- LINKS -->
-[textanalytics_client_src]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.TextAnalytics_5.2.0-beta.2/sdk/textanalytics/Azure.AI.TextAnalytics/src
-[textanalytics_docs]: https://docs.microsoft.com/azure/cognitive-services/Text-Analytics/
+[textanalytics_client_src]: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/textanalytics/Azure.AI.TextAnalytics/src
+[textanalytics_docs]: /azure/cognitive-services/Text-Analytics/
 [textanalytics_refdocs]: https://aka.ms/azsdk-net-textanalytics-ref-docs
 [textanalytics_nuget_package]: https://www.nuget.org/packages/Azure.AI.TextAnalytics
-[textanalytics_samples]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.TextAnalytics_5.2.0-beta.2/sdk/textanalytics/Azure.AI.TextAnalytics/samples/README.md
+[textanalytics_samples]: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/textanalytics/Azure.AI.TextAnalytics/samples/README.md
 [textanalytics_rest_api]: https://aka.ms/azsdk/textanalytics/restapi
-[cognitive_resource_portal]: https://docs.microsoft.com/azure/cognitive-services/cognitive-services-apis-create-account
-[cognitive_resource_cli]: https://docs.microsoft.com/azure/cognitive-services/cognitive-services-apis-create-account-cli
+[cognitive_resource_portal]: /azure/cognitive-services/cognitive-services-apis-create-account
+[cognitive_resource_cli]: /azure/cognitive-services/cognitive-services-apis-create-account-cli
 [dotnet_lro_guidelines]: https://azure.github.io/azure-sdk/dotnet_introduction.html#dotnet-longrunning
 
-[analyze_healthcare_sample]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.TextAnalytics_5.2.0-beta.2/sdk/textanalytics/Azure.AI.TextAnalytics/samples/Sample7_AnalyzeHealthcareEntities.md
-[analyze_operation_sample]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.TextAnalytics_5.2.0-beta.2/sdk/textanalytics/Azure.AI.TextAnalytics/samples/Sample_AnalyzeActions.md
-[analyze_operation_howto]: https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-call-api?tabs=synchronous#using-the-api-asynchronously
-[healthcare]: https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-for-health?tabs=ner
-[language_detection]: https://docs.microsoft.com/azure/cognitive-services/Text-Analytics/how-tos/text-analytics-how-to-language-detection
-[sentiment_analysis]: https://docs.microsoft.com/azure/cognitive-services/Text-Analytics/how-tos/text-analytics-how-to-sentiment-analysis
-[key_phrase_extraction]: https://docs.microsoft.com/azure/cognitive-services/Text-Analytics/how-tos/text-analytics-how-to-keyword-extraction
-[named_entity_recognition]: https://docs.microsoft.com/azure/cognitive-services/Text-Analytics/how-tos/text-analytics-how-to-entity-linking
-[named_entities_categories]: https://docs.microsoft.com/azure/cognitive-services/Text-Analytics/named-entity-types
-[pii_entity_type]:https://docs.microsoft.com/azure/cognitive-services/text-analytics/named-entity-types?tabs=personal 
+[analyze_healthcare_sample]: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/textanalytics/Azure.AI.TextAnalytics/samples/Sample7_AnalyzeHealthcareEntities.md
+[analyze_operation_sample]: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/textanalytics/Azure.AI.TextAnalytics/samples/Sample_AnalyzeActions.md
+[analyze_operation_howto]: /azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-call-api?tabs=synchronous#using-the-api-asynchronously
+[healthcare]: /azure/cognitive-services/text-analytics/how-tos/text-analytics-for-health?tabs=ner
+[language_detection]: /azure/cognitive-services/Text-Analytics/how-tos/text-analytics-how-to-language-detection
+[sentiment_analysis]: /azure/cognitive-services/Text-Analytics/how-tos/text-analytics-how-to-sentiment-analysis
+[key_phrase_extraction]: /azure/cognitive-services/Text-Analytics/how-tos/text-analytics-how-to-keyword-extraction
+[named_entity_recognition]: /azure/cognitive-services/Text-Analytics/how-tos/text-analytics-how-to-entity-linking
+[named_entities_categories]: /azure/cognitive-services/Text-Analytics/named-entity-types
+[pii_entity_type]:/azure/cognitive-services/text-analytics/named-entity-types?tabs=personal 
 
-[textanalytics_client_class]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.TextAnalytics_5.2.0-beta.2/sdk/textanalytics/Azure.AI.TextAnalytics/src/TextAnalyticsClient.cs
-[azure_identity]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.TextAnalytics_5.2.0-beta.2/sdk/identity/Azure.Identity
-[cognitive_auth]: https://docs.microsoft.com/azure/cognitive-services/authentication
-[register_aad_app]: https://docs.microsoft.com/azure/cognitive-services/authentication#assign-a-role-to-a-service-principal
-[aad_grant_access]: https://docs.microsoft.com/azure/cognitive-services/authentication#assign-a-role-to-a-service-principal
-[custom_subdomain]: https://docs.microsoft.com/azure/cognitive-services/authentication#create-a-resource-with-a-custom-subdomain
-[DefaultAzureCredential]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.TextAnalytics_5.2.0-beta.2/sdk/identity/Azure.Identity/README.md#defaultazurecredential
-[logging]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.TextAnalytics_5.2.0-beta.2/sdk/core/Azure.Core/samples/Diagnostics.md
-[data_limits]: https://docs.microsoft.com/azure/cognitive-services/text-analytics/concepts/data-limits?tabs=version-3
-[contributing]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.TextAnalytics_5.2.0-beta.2/CONTRIBUTING.md
+[textanalytics_client_class]: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/textanalytics/Azure.AI.TextAnalytics/src/TextAnalyticsClient.cs
+[azure_identity]: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/identity/Azure.Identity
+[cognitive_auth]: /azure/cognitive-services/authentication
+[register_aad_app]: /azure/cognitive-services/authentication#assign-a-role-to-a-service-principal
+[aad_grant_access]: /azure/cognitive-services/authentication#assign-a-role-to-a-service-principal
+[custom_subdomain]: /azure/cognitive-services/authentication#create-a-resource-with-a-custom-subdomain
+[DefaultAzureCredential]: https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/identity/Azure.Identity/README.md#defaultazurecredential
+[logging]: https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/Diagnostics.md
+[data_limits]: /azure/cognitive-services/text-analytics/concepts/data-limits?tabs=version-3
+[contributing]: https://github.com/Azure/azure-sdk-for-net/blob/main/CONTRIBUTING.md
 
-[detect_language_sample]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.TextAnalytics_5.2.0-beta.2/sdk/textanalytics/Azure.AI.TextAnalytics/samples/Sample1_DetectLanguage.md
-[analyze_sentiment_sample]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.TextAnalytics_5.2.0-beta.2/sdk/textanalytics/Azure.AI.TextAnalytics/samples/Sample2_AnalyzeSentiment.md
-[analyze_sentiment_opinion_mining_sample]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.TextAnalytics_5.2.0-beta.2/sdk/textanalytics/Azure.AI.TextAnalytics/samples/Sample2.1_AnalyzeSentimentWithOpinionMining.md
-[extract_key_phrases_sample]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.TextAnalytics_5.2.0-beta.2/sdk/textanalytics/Azure.AI.TextAnalytics/samples/Sample3_ExtractKeyPhrases.md
-[extract_summary_sample]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.TextAnalytics_5.2.0-beta.2/sdk/textanalytics/Azure.AI.TextAnalytics/samples/Sample8_ExtractSummary.md
-[recognize_entities_sample]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.TextAnalytics_5.2.0-beta.2/sdk/textanalytics/Azure.AI.TextAnalytics/samples/Sample4_RecognizeEntities.md
-[recognize_pii_entities_sample]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.TextAnalytics_5.2.0-beta.2/sdk/textanalytics/Azure.AI.TextAnalytics/samples/Sample5_RecognizePiiEntities.md
-[recognize_linked_entities_sample]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.TextAnalytics_5.2.0-beta.2/sdk/textanalytics/Azure.AI.TextAnalytics/samples/Sample6_RecognizeLinkedEntities.md
-[mock_client_sample]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.TextAnalytics_5.2.0-beta.2/sdk/textanalytics/Azure.AI.TextAnalytics/samples/Sample_MockClient.md
-[recognize_custom_entities_sample]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.TextAnalytics_5.2.0-beta.2/sdk/textanalytics/Azure.AI.TextAnalytics/samples/Sample9_RecognizeCustomEntities.md
-[single_category_classify_sample]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.TextAnalytics_5.2.0-beta.2/sdk/textanalytics/Azure.AI.TextAnalytics/samples/Sample10_SingleCategoryClassify.md
-[multi_category_classify_sample]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.TextAnalytics_5.2.0-beta.2/sdk/textanalytics/Azure.AI.TextAnalytics/samples/Sample11_MultiCategoryClassify.md
+[detect_language_sample]: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/textanalytics/Azure.AI.TextAnalytics/samples/Sample1_DetectLanguage.md
+[analyze_sentiment_sample]: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/textanalytics/Azure.AI.TextAnalytics/samples/Sample2_AnalyzeSentiment.md
+[analyze_sentiment_opinion_mining_sample]: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/textanalytics/Azure.AI.TextAnalytics/samples/Sample2.1_AnalyzeSentimentWithOpinionMining.md
+[extract_key_phrases_sample]: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/textanalytics/Azure.AI.TextAnalytics/samples/Sample3_ExtractKeyPhrases.md
+[extract_summary_sample]: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/textanalytics/Azure.AI.TextAnalytics/samples/Sample8_ExtractSummary.md
+[recognize_entities_sample]: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/textanalytics/Azure.AI.TextAnalytics/samples/Sample4_RecognizeEntities.md
+[recognize_pii_entities_sample]: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/textanalytics/Azure.AI.TextAnalytics/samples/Sample5_RecognizePiiEntities.md
+[recognize_linked_entities_sample]: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/textanalytics/Azure.AI.TextAnalytics/samples/Sample6_RecognizeLinkedEntities.md
+[mock_client_sample]: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/textanalytics/Azure.AI.TextAnalytics/samples/Sample_MockClient.md
+[recognize_custom_entities_sample]: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/textanalytics/Azure.AI.TextAnalytics/samples/Sample9_RecognizeCustomEntities.md
+[single_category_classify_sample]: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/textanalytics/Azure.AI.TextAnalytics/samples/Sample10_SingleCategoryClassify.md
+[multi_category_classify_sample]: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/textanalytics/Azure.AI.TextAnalytics/samples/Sample11_MultiCategoryClassify.md
 
-[azure_cli]: https://docs.microsoft.com/cli/azure
+[azure_cli]: /cli/azure
 [azure_sub]: https://azure.microsoft.com/free/dotnet/
 [nuget]: https://www.nuget.org/
 [azure_portal]: https://portal.azure.com
