@@ -1,7 +1,7 @@
 {
   "Name": "Azure.Template",
-  "Version": "1.0.3-beta.1519533",
-  "DevVersion": null,
+  "Version": "1.0.3-alpha.20220429.2",
+  "DevVersion": "1.0.3-alpha.20220429.2",
   "DirectoryPath": "sdk/template/Azure.Template",
   "ServiceDirectory": "template",
   "ReadMePath": "sdk/template/Azure.Template/README.md",
@@ -10,5 +10,5 @@
   "SdkType": "client",
   "IsNewSdk": true,
   "ArtifactName": "Azure.Template",
-  "ReleaseStatus": "2022-04-20"
+  "ReleaseStatus": "2022-04-29"
 }
