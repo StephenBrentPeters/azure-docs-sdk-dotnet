@@ -1,7 +1,7 @@
 {
   "Name": "Azure.Media.VideoAnalyzer.Edge",
-  "Version": "1.0.0-beta.5",
-  "DevVersion": null,
+  "Version": "1.0.0-alpha.20220429.1",
+  "DevVersion": "1.0.0-alpha.20220429.1",
   "DirectoryPath": "sdk/videoanalyzer/Azure.Media.VideoAnalyzer.Edge",
   "ServiceDirectory": "videoanalyzer",
   "ReadMePath": "sdk/videoanalyzer/Azure.Media.VideoAnalyzer.Edge/README.md",
@@ -10,5 +10,5 @@
   "SdkType": "client",
   "IsNewSdk": true,
   "ArtifactName": "Azure.Media.VideoAnalyzer.Edge",
-  "ReleaseStatus": "2021-11-09"
+  "ReleaseStatus": "Unreleased"
 }
