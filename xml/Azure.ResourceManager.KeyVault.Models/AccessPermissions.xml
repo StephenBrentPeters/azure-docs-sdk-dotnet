@@ -34,18 +34,18 @@
       </Docs>
     </Member>
     <Member MemberName="Certificates">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.ResourceManager.KeyVault.Models.CertificatePermissions&gt; Certificates { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;valuetype Azure.ResourceManager.KeyVault.Models.CertificatePermissions&gt; Certificates" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.ResourceManager.KeyVault.Models.CertificatePermission&gt; Certificates { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;valuetype Azure.ResourceManager.KeyVault.Models.CertificatePermission&gt; Certificates" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.KeyVault.Models.AccessPermissions.Certificates" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Certificates As IList(Of CertificatePermissions)" />
-      <MemberSignature Language="F#" Value="member this.Certificates : System.Collections.Generic.IList&lt;Azure.ResourceManager.KeyVault.Models.CertificatePermissions&gt;" Usage="Azure.ResourceManager.KeyVault.Models.AccessPermissions.Certificates" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Certificates As IList(Of CertificatePermission)" />
+      <MemberSignature Language="F#" Value="member this.Certificates : System.Collections.Generic.IList&lt;Azure.ResourceManager.KeyVault.Models.CertificatePermission&gt;" Usage="Azure.ResourceManager.KeyVault.Models.AccessPermissions.Certificates" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Collections.Generic.IList&lt;Azure.ResourceManager.KeyVault.Models.CertificatePermissions&gt;</ReturnType>
+        <ReturnType>System.Collections.Generic.IList&lt;Azure.ResourceManager.KeyVault.Models.CertificatePermission&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Permissions to certificates. </summary>
@@ -54,18 +54,18 @@
       </Docs>
     </Member>
     <Member MemberName="Keys">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.ResourceManager.KeyVault.Models.KeyPermissions&gt; Keys { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;valuetype Azure.ResourceManager.KeyVault.Models.KeyPermissions&gt; Keys" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.ResourceManager.KeyVault.Models.KeyPermission&gt; Keys { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;valuetype Azure.ResourceManager.KeyVault.Models.KeyPermission&gt; Keys" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.KeyVault.Models.AccessPermissions.Keys" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As IList(Of KeyPermissions)" />
-      <MemberSignature Language="F#" Value="member this.Keys : System.Collections.Generic.IList&lt;Azure.ResourceManager.KeyVault.Models.KeyPermissions&gt;" Usage="Azure.ResourceManager.KeyVault.Models.AccessPermissions.Keys" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As IList(Of KeyPermission)" />
+      <MemberSignature Language="F#" Value="member this.Keys : System.Collections.Generic.IList&lt;Azure.ResourceManager.KeyVault.Models.KeyPermission&gt;" Usage="Azure.ResourceManager.KeyVault.Models.AccessPermissions.Keys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Collections.Generic.IList&lt;Azure.ResourceManager.KeyVault.Models.KeyPermissions&gt;</ReturnType>
+        <ReturnType>System.Collections.Generic.IList&lt;Azure.ResourceManager.KeyVault.Models.KeyPermission&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Permissions to keys. </summary>
@@ -74,18 +74,18 @@
       </Docs>
     </Member>
     <Member MemberName="Secrets">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.ResourceManager.KeyVault.Models.SecretPermissions&gt; Secrets { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;valuetype Azure.ResourceManager.KeyVault.Models.SecretPermissions&gt; Secrets" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.ResourceManager.KeyVault.Models.SecretPermission&gt; Secrets { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;valuetype Azure.ResourceManager.KeyVault.Models.SecretPermission&gt; Secrets" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.KeyVault.Models.AccessPermissions.Secrets" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Secrets As IList(Of SecretPermissions)" />
-      <MemberSignature Language="F#" Value="member this.Secrets : System.Collections.Generic.IList&lt;Azure.ResourceManager.KeyVault.Models.SecretPermissions&gt;" Usage="Azure.ResourceManager.KeyVault.Models.AccessPermissions.Secrets" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Secrets As IList(Of SecretPermission)" />
+      <MemberSignature Language="F#" Value="member this.Secrets : System.Collections.Generic.IList&lt;Azure.ResourceManager.KeyVault.Models.SecretPermission&gt;" Usage="Azure.ResourceManager.KeyVault.Models.AccessPermissions.Secrets" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Collections.Generic.IList&lt;Azure.ResourceManager.KeyVault.Models.SecretPermissions&gt;</ReturnType>
+        <ReturnType>System.Collections.Generic.IList&lt;Azure.ResourceManager.KeyVault.Models.SecretPermission&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Permissions to secrets. </summary>
@@ -94,18 +94,18 @@
       </Docs>
     </Member>
     <Member MemberName="Storage">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.ResourceManager.KeyVault.Models.StoragePermissions&gt; Storage { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;valuetype Azure.ResourceManager.KeyVault.Models.StoragePermissions&gt; Storage" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.ResourceManager.KeyVault.Models.StoragePermission&gt; Storage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;valuetype Azure.ResourceManager.KeyVault.Models.StoragePermission&gt; Storage" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.KeyVault.Models.AccessPermissions.Storage" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Storage As IList(Of StoragePermissions)" />
-      <MemberSignature Language="F#" Value="member this.Storage : System.Collections.Generic.IList&lt;Azure.ResourceManager.KeyVault.Models.StoragePermissions&gt;" Usage="Azure.ResourceManager.KeyVault.Models.AccessPermissions.Storage" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Storage As IList(Of StoragePermission)" />
+      <MemberSignature Language="F#" Value="member this.Storage : System.Collections.Generic.IList&lt;Azure.ResourceManager.KeyVault.Models.StoragePermission&gt;" Usage="Azure.ResourceManager.KeyVault.Models.AccessPermissions.Storage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Collections.Generic.IList&lt;Azure.ResourceManager.KeyVault.Models.StoragePermissions&gt;</ReturnType>
+        <ReturnType>System.Collections.Generic.IList&lt;Azure.ResourceManager.KeyVault.Models.StoragePermission&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Permissions to storage accounts. </summary>

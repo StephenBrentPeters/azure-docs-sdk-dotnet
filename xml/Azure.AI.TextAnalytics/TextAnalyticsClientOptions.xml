@@ -55,6 +55,28 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Audience">
+      <MemberSignature Language="C#" Value="public Azure.AI.TextAnalytics.TextAnalyticsAudience? Audience { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.AI.TextAnalytics.TextAnalyticsAudience&gt; Audience" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.TextAnalytics.TextAnalyticsClientOptions.Audience" />
+      <MemberSignature Language="VB.NET" Value="Public Property Audience As Nullable(Of TextAnalyticsAudience)" />
+      <MemberSignature Language="F#" Value="member this.Audience : Nullable&lt;Azure.AI.TextAnalytics.TextAnalyticsAudience&gt; with get, set" Usage="Azure.AI.TextAnalytics.TextAnalyticsClientOptions.Audience" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.TextAnalytics</AssemblyName>
+        <AssemblyVersion>5.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.AI.TextAnalytics.TextAnalyticsAudience&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the Audience to use for authentication with Azure Active Directory (AAD). The audience is not considered when using a shared key.
+            </summary>
+        <value>If <c>null</c>, <see cref="P:Azure.AI.TextAnalytics.TextAnalyticsAudience.AzurePublicCloud" /> will be assumed.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="DefaultCountryHint">
       <MemberSignature Language="C#" Value="public string DefaultCountryHint { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultCountryHint" />

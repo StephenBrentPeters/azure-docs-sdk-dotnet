@@ -34,18 +34,18 @@
       </Docs>
     </Member>
     <Member MemberName="Etag">
-      <MemberSignature Language="C#" Value="public string Etag { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string Etag" />
+      <MemberSignature Language="C#" Value="public Azure.ETag? Etag { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ETag&gt; Etag" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.KeyVault.Models.PrivateEndpointConnectionItem.Etag" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Etag As String" />
-      <MemberSignature Language="F#" Value="member this.Etag : string" Usage="Azure.ResourceManager.KeyVault.Models.PrivateEndpointConnectionItem.Etag" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Etag As Nullable(Of ETag)" />
+      <MemberSignature Language="F#" Value="member this.Etag : Nullable&lt;Azure.ETag&gt;" Usage="Azure.ResourceManager.KeyVault.Models.PrivateEndpointConnectionItem.Etag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>System.Nullable&lt;Azure.ETag&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Modified whenever there is a change in the state of private endpoint connection. </summary>
@@ -94,18 +94,18 @@
       </Docs>
     </Member>
     <Member MemberName="PrivateLinkServiceConnectionState">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.KeyVault.Models.PrivateLinkServiceConnectionState PrivateLinkServiceConnectionState { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.KeyVault.Models.PrivateLinkServiceConnectionState PrivateLinkServiceConnectionState" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateLinkServiceConnectionState PrivateLinkServiceConnectionState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateLinkServiceConnectionState PrivateLinkServiceConnectionState" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.KeyVault.Models.PrivateEndpointConnectionItem.PrivateLinkServiceConnectionState" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrivateLinkServiceConnectionState As PrivateLinkServiceConnectionState" />
-      <MemberSignature Language="F#" Value="member this.PrivateLinkServiceConnectionState : Azure.ResourceManager.KeyVault.Models.PrivateLinkServiceConnectionState" Usage="Azure.ResourceManager.KeyVault.Models.PrivateEndpointConnectionItem.PrivateLinkServiceConnectionState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrivateLinkServiceConnectionState As KeyVaultPrivateLinkServiceConnectionState" />
+      <MemberSignature Language="F#" Value="member this.PrivateLinkServiceConnectionState : Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateLinkServiceConnectionState" Usage="Azure.ResourceManager.KeyVault.Models.PrivateEndpointConnectionItem.PrivateLinkServiceConnectionState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.KeyVault.Models.PrivateLinkServiceConnectionState</ReturnType>
+        <ReturnType>Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateLinkServiceConnectionState</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Approval state of the private link connection. </summary>
@@ -114,18 +114,18 @@
       </Docs>
     </Member>
     <Member MemberName="ProvisioningState">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.KeyVault.Models.PrivateEndpointConnectionProvisioningState? ProvisioningState { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.KeyVault.Models.PrivateEndpointConnectionProvisioningState&gt; ProvisioningState" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateEndpointConnectionProvisioningState? ProvisioningState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateEndpointConnectionProvisioningState&gt; ProvisioningState" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.KeyVault.Models.PrivateEndpointConnectionItem.ProvisioningState" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProvisioningState As Nullable(Of PrivateEndpointConnectionProvisioningState)" />
-      <MemberSignature Language="F#" Value="member this.ProvisioningState : Nullable&lt;Azure.ResourceManager.KeyVault.Models.PrivateEndpointConnectionProvisioningState&gt;" Usage="Azure.ResourceManager.KeyVault.Models.PrivateEndpointConnectionItem.ProvisioningState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProvisioningState As Nullable(Of KeyVaultPrivateEndpointConnectionProvisioningState)" />
+      <MemberSignature Language="F#" Value="member this.ProvisioningState : Nullable&lt;Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateEndpointConnectionProvisioningState&gt;" Usage="Azure.ResourceManager.KeyVault.Models.PrivateEndpointConnectionItem.ProvisioningState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Nullable&lt;Azure.ResourceManager.KeyVault.Models.PrivateEndpointConnectionProvisioningState&gt;</ReturnType>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateEndpointConnectionProvisioningState&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Provisioning state of the private endpoint connection. </summary>

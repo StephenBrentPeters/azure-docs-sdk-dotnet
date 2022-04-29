@@ -1,15 +1,15 @@
 <Type Name="MhsmPrivateLinkResource" FullName="Azure.ResourceManager.KeyVault.Models.MhsmPrivateLinkResource">
-  <TypeSignature Language="C#" Value="public class MhsmPrivateLinkResource : Azure.ResourceManager.KeyVault.Models.ManagedHsmResource" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MhsmPrivateLinkResource extends Azure.ResourceManager.KeyVault.Models.ManagedHsmResource" />
+  <TypeSignature Language="C#" Value="public class MhsmPrivateLinkResource : Azure.ResourceManager.KeyVault.Models.KeyVaultTrackedResourceData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MhsmPrivateLinkResource extends Azure.ResourceManager.KeyVault.Models.KeyVaultTrackedResourceData" />
   <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.KeyVault.Models.MhsmPrivateLinkResource" />
-  <TypeSignature Language="VB.NET" Value="Public Class MhsmPrivateLinkResource&#xA;Inherits ManagedHsmResource" />
-  <TypeSignature Language="F#" Value="type MhsmPrivateLinkResource = class&#xA;    inherit ManagedHsmResource" />
+  <TypeSignature Language="VB.NET" Value="Public Class MhsmPrivateLinkResource&#xA;Inherits KeyVaultTrackedResourceData" />
+  <TypeSignature Language="F#" Value="type MhsmPrivateLinkResource = class&#xA;    inherit KeyVaultTrackedResourceData" />
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.ResourceManager.KeyVault.Models.ManagedHsmResource</BaseTypeName>
+    <BaseTypeName>Azure.ResourceManager.KeyVault.Models.KeyVaultTrackedResourceData</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>

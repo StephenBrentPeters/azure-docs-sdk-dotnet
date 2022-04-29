@@ -58,18 +58,18 @@
       </Docs>
     </Member>
     <Member MemberName="ProvisioningState">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.KeyVault.Models.PrivateEndpointConnectionProvisioningState? ProvisioningState { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.KeyVault.Models.PrivateEndpointConnectionProvisioningState&gt; ProvisioningState" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateEndpointConnectionProvisioningState? ProvisioningState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateEndpointConnectionProvisioningState&gt; ProvisioningState" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.KeyVault.Models.MhsmPrivateEndpointConnectionItem.ProvisioningState" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProvisioningState As Nullable(Of PrivateEndpointConnectionProvisioningState)" />
-      <MemberSignature Language="F#" Value="member this.ProvisioningState : Nullable&lt;Azure.ResourceManager.KeyVault.Models.PrivateEndpointConnectionProvisioningState&gt;" Usage="Azure.ResourceManager.KeyVault.Models.MhsmPrivateEndpointConnectionItem.ProvisioningState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProvisioningState As Nullable(Of KeyVaultPrivateEndpointConnectionProvisioningState)" />
+      <MemberSignature Language="F#" Value="member this.ProvisioningState : Nullable&lt;Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateEndpointConnectionProvisioningState&gt;" Usage="Azure.ResourceManager.KeyVault.Models.MhsmPrivateEndpointConnectionItem.ProvisioningState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Nullable&lt;Azure.ResourceManager.KeyVault.Models.PrivateEndpointConnectionProvisioningState&gt;</ReturnType>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateEndpointConnectionProvisioningState&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Provisioning state of the private endpoint connection. </summary>

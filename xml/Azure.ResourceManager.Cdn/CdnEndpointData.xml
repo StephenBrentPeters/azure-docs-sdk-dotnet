@@ -78,18 +78,18 @@
       </Docs>
     </Member>
     <Member MemberName="DefaultOriginGroupId">
-      <MemberSignature Language="C#" Value="public string DefaultOriginGroupId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string DefaultOriginGroupId" />
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier DefaultOriginGroupId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier DefaultOriginGroupId" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Cdn.CdnEndpointData.DefaultOriginGroupId" />
-      <MemberSignature Language="VB.NET" Value="Public Property DefaultOriginGroupId As String" />
-      <MemberSignature Language="F#" Value="member this.DefaultOriginGroupId : string with get, set" Usage="Azure.ResourceManager.Cdn.CdnEndpointData.DefaultOriginGroupId" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultOriginGroupId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.DefaultOriginGroupId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Cdn.CdnEndpointData.DefaultOriginGroupId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Resource ID. </summary>
@@ -418,18 +418,18 @@
       </Docs>
     </Member>
     <Member MemberName="WebApplicationFirewallPolicyLinkId">
-      <MemberSignature Language="C#" Value="public string WebApplicationFirewallPolicyLinkId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string WebApplicationFirewallPolicyLinkId" />
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier WebApplicationFirewallPolicyLinkId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier WebApplicationFirewallPolicyLinkId" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Cdn.CdnEndpointData.WebApplicationFirewallPolicyLinkId" />
-      <MemberSignature Language="VB.NET" Value="Public Property WebApplicationFirewallPolicyLinkId As String" />
-      <MemberSignature Language="F#" Value="member this.WebApplicationFirewallPolicyLinkId : string with get, set" Usage="Azure.ResourceManager.Cdn.CdnEndpointData.WebApplicationFirewallPolicyLinkId" />
+      <MemberSignature Language="VB.NET" Value="Public Property WebApplicationFirewallPolicyLinkId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.WebApplicationFirewallPolicyLinkId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Cdn.CdnEndpointData.WebApplicationFirewallPolicyLinkId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Resource ID. </summary>
