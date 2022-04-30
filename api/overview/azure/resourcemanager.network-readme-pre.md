@@ -3,14 +3,12 @@ title: Azure Network Management client library for .NET
 keywords: Azure, dotnet, SDK, API, Azure.ResourceManager.Network, network
 author: aznetsuppgithub
 ms.author: aznetsuppgithub
-ms.date: 04/08/2022
+ms.date: 04/30/2022
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: network
 ---
-# Azure Network Management client library for .NET - Version 1.0.0-beta.7 
+# Azure Network Management client library for .NET - Version 1.0.0-alpha.20220429.2 
 
 
 This package follows the [new Azure SDK guidelines](https://azure.github.io/azure-sdk/general_introduction.html) which provide a number of core capabilities that are shared amongst all Azure SDKs, including:
@@ -26,8 +24,8 @@ This package follows the [new Azure SDK guidelines](https://azure.github.io/azur
 
 Install the Azure Network management library for .NET with [NuGet](https://www.nuget.org/):
 
-```PowerShell
-Install-Package Azure.ResourceManager.Network -Version 1.0.0-beta.6
+```dotnetcli
+dotnet add package Azure.ResourceManager.Network --prerelease
 ```
 
 ### Prerequisites
@@ -36,11 +34,11 @@ Set up a way to authenticate to Azure with Azure Identity.
 
 Some options are:
 
-- Through the [Azure CLI Login](https://docs.microsoft.com/cli/azure/authenticate-azure-cli).
-- Via [Visual Studio](https://docs.microsoft.com/dotnet/api/overview/azure/identity-readme?view=azure-dotnet#authenticating-via-visual-studio).
-- Setting [Environment Variables](https://github.com/Azure/azure-sdk-for-net/blob/Azure.ResourceManager.Network_1.0.0-beta.7/sdk/resourcemanager/Azure.ResourceManager/docs/AuthUsingEnvironmentVariables.md).
+- Through the [Azure CLI Login](/cli/azure/authenticate-azure-cli).
+- Via [Visual Studio](/dotnet/api/overview/azure/identity-readme?view=azure-dotnet#authenticating-via-visual-studio).
+- Setting [Environment Variables](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/resourcemanager/Azure.ResourceManager/docs/AuthUsingEnvironmentVariables.md).
 
-More information and different authentication approaches using Azure Identity can be found in [this document](https://docs.microsoft.com/dotnet/api/overview/azure/identity-readme?view=azure-dotnet).
+More information and different authentication approaches using Azure Identity can be found in [this document](/dotnet/api/overview/azure/identity-readme?view=azure-dotnet).
 
 ### Authenticate the Client
 
@@ -56,7 +54,7 @@ using Azure.Identity;
 ArmClient armClient = new ArmClient(new DefaultAzureCredential());
 ```
 
-Additional documentation for the `Azure.Identity.DefaultAzureCredential` class can be found in [this document](https://docs.microsoft.com/dotnet/api/azure.identity.defaultazurecredential).
+Additional documentation for the `Azure.Identity.DefaultAzureCredential` class can be found in [this document](/dotnet/api/azure.identity.defaultazurecredential).
 
 ## Key concepts
 
@@ -66,15 +64,15 @@ Key concepts of the Azure .NET SDK can be found [here](https://azure.github.io/a
 
 Documentation is available to help you learn how to use this package
 
-- [Quickstart](https://github.com/Azure/azure-sdk-for-net/blob/Azure.ResourceManager.Network_1.0.0-beta.7/doc/mgmt_preview_quickstart.md)
-- [API References](https://docs.microsoft.com/dotnet/api/?view=azure-dotnet)
-- [Authentication](https://github.com/Azure/azure-sdk-for-net/blob/Azure.ResourceManager.Network_1.0.0-beta.7/sdk/identity/Azure.Identity/README.md)
+- [Quickstart](https://github.com/Azure/azure-sdk-for-net/blob/main/doc/mgmt_preview_quickstart.md)
+- [API References](/dotnet/api/?view=azure-dotnet)
+- [Authentication](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/identity/Azure.Identity/README.md)
 
 ## Examples
 
 Code samples for using the management library for .NET can be found in the following locations
 
-- [.NET Management Library Code Samples](https://docs.microsoft.com/samples/browse/?branch=master&languages=csharp&term=managing%20using%20Azure%20.NET%20SDK)
+- [.NET Management Library Code Samples](/samples/browse/?branch=master&languages=csharp&term=managing%20using%20Azure%20.NET%20SDK)
 
 ## Troubleshooting
 
@@ -82,7 +80,7 @@ Code samples for using the management library for .NET can be found in the follo
 - If you need help, check [previous
     questions](https://stackoverflow.com/questions/tagged/azure+.net)
     or ask new ones on StackOverflow using azure and .NET tags.
-- If having trouble with authentication, go to [DefaultAzureCredential documentation](https://docs.microsoft.com/dotnet/api/azure.identity.defaultazurecredential?view=azure-dotnet)
+- If having trouble with authentication, go to [DefaultAzureCredential documentation](/dotnet/api/azure.identity.defaultazurecredential?view=azure-dotnet)
 
 ## Next steps
 
@@ -109,6 +107,6 @@ more information see the [Code of Conduct FAQ][coc_faq] or contact
 <opencode@microsoft.com> with any additional questions or comments.
 
 <!-- LINKS -->
-[cg]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.ResourceManager.Network_1.0.0-beta.7/sdk/resourcemanager/Azure.ResourceManager/docs/CONTRIBUTING.md
+[cg]: https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/resourcemanager/Azure.ResourceManager/docs/CONTRIBUTING.md
 [coc]: https://opensource.microsoft.com/codeofconduct/
 [coc_faq]: https://opensource.microsoft.com/codeofconduct/faq/
