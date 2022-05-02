@@ -1,0 +1,14 @@
+{
+  "Name": "Azure.Core.Amqp",
+  "Version": "1.3.0-alpha.20220502.1",
+  "DevVersion": "1.3.0-alpha.20220502.1",
+  "DirectoryPath": "sdk/core/Azure.Core.Amqp",
+  "ServiceDirectory": "core",
+  "ReadMePath": "sdk/core/Azure.Core.Amqp/README.md",
+  "ChangeLogPath": "sdk/core/Azure.Core.Amqp/CHANGELOG.md",
+  "Group": null,
+  "SdkType": "client",
+  "IsNewSdk": true,
+  "ArtifactName": "Azure.Core.Amqp",
+  "ReleaseStatus": "Unreleased"
+}
