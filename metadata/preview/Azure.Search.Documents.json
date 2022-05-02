@@ -1,7 +1,7 @@
 {
   "Name": "Azure.Search.Documents",
-  "Version": "11.4.0-beta.7",
-  "DevVersion": null,
+  "Version": "11.4.0-alpha.20220502.1",
+  "DevVersion": "11.4.0-alpha.20220502.1",
   "DirectoryPath": "sdk/search/Azure.Search.Documents",
   "ServiceDirectory": "search",
   "ReadMePath": "sdk/search/Azure.Search.Documents/README.md",
@@ -10,5 +10,5 @@
   "SdkType": "client",
   "IsNewSdk": true,
   "ArtifactName": "Azure.Search.Documents",
-  "ReleaseStatus": "2022-03-08"
+  "ReleaseStatus": "Unreleased"
 }
