@@ -1,7 +1,7 @@
 {
   "Name": "Azure.Media.VideoAnalyzer.Edge",
-  "Version": "1.0.0-beta.6",
-  "DevVersion": null,
+  "Version": "1.0.0-alpha.20220502.1",
+  "DevVersion": "1.0.0-alpha.20220502.1",
   "DirectoryPath": "sdk/videoanalyzer/Azure.Media.VideoAnalyzer.Edge",
   "ServiceDirectory": "videoanalyzer",
   "ReadMePath": "sdk/videoanalyzer/Azure.Media.VideoAnalyzer.Edge/README.md",
