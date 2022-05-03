@@ -62,11 +62,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetMetadataPolicies">
-      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;BinaryData&gt; GetMetadataPolicies (Azure.RequestOptions options);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class System.BinaryData&gt; GetMetadataPolicies(class Azure.RequestOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Administration.PurviewMetadataPolicyClient.GetMetadataPolicies(Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMetadataPolicies (options As RequestOptions) As Pageable(Of BinaryData)" />
-      <MemberSignature Language="F#" Value="abstract member GetMetadataPolicies : Azure.RequestOptions -&gt; Azure.Pageable&lt;BinaryData&gt;&#xA;override this.GetMetadataPolicies : Azure.RequestOptions -&gt; Azure.Pageable&lt;BinaryData&gt;" Usage="purviewMetadataPolicyClient.GetMetadataPolicies options" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;BinaryData&gt; GetMetadataPolicies (Azure.RequestContext context = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class System.BinaryData&gt; GetMetadataPolicies(class Azure.RequestContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Administration.PurviewMetadataPolicyClient.GetMetadataPolicies(Azure.RequestContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMetadataPolicies (Optional context As RequestContext = Nothing) As Pageable(Of BinaryData)" />
+      <MemberSignature Language="F#" Value="abstract member GetMetadataPolicies : Azure.RequestContext -&gt; Azure.Pageable&lt;BinaryData&gt;&#xA;override this.GetMetadataPolicies : Azure.RequestContext -&gt; Azure.Pageable&lt;BinaryData&gt;" Usage="purviewMetadataPolicyClient.GetMetadataPolicies context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Administration</AssemblyName>
@@ -76,10 +76,10 @@
         <ReturnType>Azure.Pageable&lt;System.BinaryData&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="options" Type="Azure.RequestOptions" />
+        <Parameter Name="context" Type="Azure.RequestContext" />
       </Parameters>
       <Docs>
-        <param name="options"> The request options. </param>
+        <param name="context"> The request context, which can override default behaviors on the request on a per-call basis. </param>
         <summary> List or Get metadata policies. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -131,11 +131,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetMetadataPoliciesAsync">
-      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;BinaryData&gt; GetMetadataPoliciesAsync (Azure.RequestOptions options);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class System.BinaryData&gt; GetMetadataPoliciesAsync(class Azure.RequestOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Administration.PurviewMetadataPolicyClient.GetMetadataPoliciesAsync(Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMetadataPoliciesAsync (options As RequestOptions) As AsyncPageable(Of BinaryData)" />
-      <MemberSignature Language="F#" Value="abstract member GetMetadataPoliciesAsync : Azure.RequestOptions -&gt; Azure.AsyncPageable&lt;BinaryData&gt;&#xA;override this.GetMetadataPoliciesAsync : Azure.RequestOptions -&gt; Azure.AsyncPageable&lt;BinaryData&gt;" Usage="purviewMetadataPolicyClient.GetMetadataPoliciesAsync options" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;BinaryData&gt; GetMetadataPoliciesAsync (Azure.RequestContext context = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class System.BinaryData&gt; GetMetadataPoliciesAsync(class Azure.RequestContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Administration.PurviewMetadataPolicyClient.GetMetadataPoliciesAsync(Azure.RequestContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMetadataPoliciesAsync (Optional context As RequestContext = Nothing) As AsyncPageable(Of BinaryData)" />
+      <MemberSignature Language="F#" Value="abstract member GetMetadataPoliciesAsync : Azure.RequestContext -&gt; Azure.AsyncPageable&lt;BinaryData&gt;&#xA;override this.GetMetadataPoliciesAsync : Azure.RequestContext -&gt; Azure.AsyncPageable&lt;BinaryData&gt;" Usage="purviewMetadataPolicyClient.GetMetadataPoliciesAsync context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Administration</AssemblyName>
@@ -145,10 +145,10 @@
         <ReturnType>Azure.AsyncPageable&lt;System.BinaryData&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="options" Type="Azure.RequestOptions" />
+        <Parameter Name="context" Type="Azure.RequestContext" />
       </Parameters>
       <Docs>
-        <param name="options"> The request options. </param>
+        <param name="context"> The request context, which can override default behaviors on the request on a per-call basis. </param>
         <summary> List or Get metadata policies. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -200,11 +200,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetMetadataPolicy">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetMetadataPolicy (string policyId, Azure.RequestOptions options);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetMetadataPolicy(string policyId, class Azure.RequestOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Administration.PurviewMetadataPolicyClient.GetMetadataPolicy(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMetadataPolicy (policyId As String, options As RequestOptions) As Response" />
-      <MemberSignature Language="F#" Value="abstract member GetMetadataPolicy : string * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetMetadataPolicy : string * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewMetadataPolicyClient.GetMetadataPolicy (policyId, options)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetMetadataPolicy (string policyId, Azure.RequestContext context = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetMetadataPolicy(string policyId, class Azure.RequestContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Administration.PurviewMetadataPolicyClient.GetMetadataPolicy(System.String,Azure.RequestContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMetadataPolicy (policyId As String, Optional context As RequestContext = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member GetMetadataPolicy : string * Azure.RequestContext -&gt; Azure.Response&#xA;override this.GetMetadataPolicy : string * Azure.RequestContext -&gt; Azure.Response" Usage="purviewMetadataPolicyClient.GetMetadataPolicy (policyId, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Administration</AssemblyName>
@@ -215,11 +215,11 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="policyId" Type="System.String" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
+        <Parameter Name="context" Type="Azure.RequestContext" />
       </Parameters>
       <Docs>
         <param name="policyId"> Id of an existing policy that needs to be fetched. </param>
-        <param name="options"> The request options. </param>
+        <param name="context"> The request context, which can override default behaviors on the request on a per-call basis. </param>
         <summary> Gets a metadata policy. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -265,14 +265,16 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="policyId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="policyId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetMetadataPolicyAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetMetadataPolicyAsync (string policyId, Azure.RequestOptions options);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetMetadataPolicyAsync(string policyId, class Azure.RequestOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Administration.PurviewMetadataPolicyClient.GetMetadataPolicyAsync(System.String,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMetadataPolicyAsync (policyId As String, options As RequestOptions) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member GetMetadataPolicyAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetMetadataPolicyAsync : string * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewMetadataPolicyClient.GetMetadataPolicyAsync (policyId, options)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetMetadataPolicyAsync (string policyId, Azure.RequestContext context = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetMetadataPolicyAsync(string policyId, class Azure.RequestContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Administration.PurviewMetadataPolicyClient.GetMetadataPolicyAsync(System.String,Azure.RequestContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMetadataPolicyAsync (policyId As String, Optional context As RequestContext = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member GetMetadataPolicyAsync : string * Azure.RequestContext -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetMetadataPolicyAsync : string * Azure.RequestContext -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewMetadataPolicyClient.GetMetadataPolicyAsync (policyId, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Administration</AssemblyName>
@@ -283,11 +285,11 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="policyId" Type="System.String" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
+        <Parameter Name="context" Type="Azure.RequestContext" />
       </Parameters>
       <Docs>
         <param name="policyId"> Id of an existing policy that needs to be fetched. </param>
-        <param name="options"> The request options. </param>
+        <param name="context"> The request context, which can override default behaviors on the request on a per-call basis. </param>
         <summary> Gets a metadata policy. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -333,6 +335,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="policyId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="policyId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="Pipeline">
@@ -356,11 +360,11 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateMetadataPolicy">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response UpdateMetadataPolicy (string policyId, Azure.Core.RequestContent content, Azure.RequestOptions options = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response UpdateMetadataPolicy(string policyId, class Azure.Core.RequestContent content, class Azure.RequestOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Administration.PurviewMetadataPolicyClient.UpdateMetadataPolicy(System.String,Azure.Core.RequestContent,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateMetadataPolicy (policyId As String, content As RequestContent, Optional options As RequestOptions = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="abstract member UpdateMetadataPolicy : string * Azure.Core.RequestContent * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.UpdateMetadataPolicy : string * Azure.Core.RequestContent * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewMetadataPolicyClient.UpdateMetadataPolicy (policyId, content, options)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response UpdateMetadataPolicy (string policyId, Azure.Core.RequestContent content, Azure.RequestContext context = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response UpdateMetadataPolicy(string policyId, class Azure.Core.RequestContent content, class Azure.RequestContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Administration.PurviewMetadataPolicyClient.UpdateMetadataPolicy(System.String,Azure.Core.RequestContent,Azure.RequestContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateMetadataPolicy (policyId As String, content As RequestContent, Optional context As RequestContext = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member UpdateMetadataPolicy : string * Azure.Core.RequestContent * Azure.RequestContext -&gt; Azure.Response&#xA;override this.UpdateMetadataPolicy : string * Azure.Core.RequestContent * Azure.RequestContext -&gt; Azure.Response" Usage="purviewMetadataPolicyClient.UpdateMetadataPolicy (policyId, content, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Administration</AssemblyName>
@@ -372,12 +376,12 @@
       <Parameters>
         <Parameter Name="policyId" Type="System.String" />
         <Parameter Name="content" Type="Azure.Core.RequestContent" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
+        <Parameter Name="context" Type="Azure.RequestContext" />
       </Parameters>
       <Docs>
         <param name="policyId"> Unique policy id. </param>
         <param name="content"> The content to send as the body of the request. </param>
-        <param name="options"> The request options. </param>
+        <param name="context"> The request context, which can override default behaviors on the request on a per-call basis. </param>
         <summary> Updates a metadata policy. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -453,14 +457,16 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="policyId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="policyId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="UpdateMetadataPolicyAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; UpdateMetadataPolicyAsync (string policyId, Azure.Core.RequestContent content, Azure.RequestOptions options = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; UpdateMetadataPolicyAsync(string policyId, class Azure.Core.RequestContent content, class Azure.RequestOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Administration.PurviewMetadataPolicyClient.UpdateMetadataPolicyAsync(System.String,Azure.Core.RequestContent,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateMetadataPolicyAsync (policyId As String, content As RequestContent, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member UpdateMetadataPolicyAsync : string * Azure.Core.RequestContent * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.UpdateMetadataPolicyAsync : string * Azure.Core.RequestContent * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewMetadataPolicyClient.UpdateMetadataPolicyAsync (policyId, content, options)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; UpdateMetadataPolicyAsync (string policyId, Azure.Core.RequestContent content, Azure.RequestContext context = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; UpdateMetadataPolicyAsync(string policyId, class Azure.Core.RequestContent content, class Azure.RequestContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Administration.PurviewMetadataPolicyClient.UpdateMetadataPolicyAsync(System.String,Azure.Core.RequestContent,Azure.RequestContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateMetadataPolicyAsync (policyId As String, content As RequestContent, Optional context As RequestContext = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateMetadataPolicyAsync : string * Azure.Core.RequestContent * Azure.RequestContext -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.UpdateMetadataPolicyAsync : string * Azure.Core.RequestContent * Azure.RequestContext -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewMetadataPolicyClient.UpdateMetadataPolicyAsync (policyId, content, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Administration</AssemblyName>
@@ -472,12 +478,12 @@
       <Parameters>
         <Parameter Name="policyId" Type="System.String" />
         <Parameter Name="content" Type="Azure.Core.RequestContent" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
+        <Parameter Name="context" Type="Azure.RequestContext" />
       </Parameters>
       <Docs>
         <param name="policyId"> Unique policy id. </param>
         <param name="content"> The content to send as the body of the request. </param>
-        <param name="options"> The request options. </param>
+        <param name="context"> The request context, which can override default behaviors on the request on a per-call basis. </param>
         <summary> Updates a metadata policy. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -553,6 +559,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="policyId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="policyId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
   </Members>

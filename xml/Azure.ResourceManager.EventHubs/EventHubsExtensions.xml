@@ -660,6 +660,35 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetEventHubsPrivateEndpointConnectionResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.EventHubs.EventHubsPrivateEndpointConnectionResource GetEventHubsPrivateEndpointConnectionResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.EventHubs.EventHubsPrivateEndpointConnectionResource GetEventHubsPrivateEndpointConnectionResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.EventHubsExtensions.GetEventHubsPrivateEndpointConnectionResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetEventHubsPrivateEndpointConnectionResource (client As ArmClient, id As ResourceIdentifier) As EventHubsPrivateEndpointConnectionResource" />
+      <MemberSignature Language="F#" Value="static member GetEventHubsPrivateEndpointConnectionResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.EventHubs.EventHubsPrivateEndpointConnectionResource" Usage="Azure.ResourceManager.EventHubs.EventHubsExtensions.GetEventHubsPrivateEndpointConnectionResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.EventHubs.EventHubsPrivateEndpointConnectionResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing an <see cref="T:Azure.ResourceManager.EventHubs.EventHubsPrivateEndpointConnectionResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.EventHubs.EventHubsPrivateEndpointConnectionResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create an <see cref="T:Azure.ResourceManager.EventHubs.EventHubsPrivateEndpointConnectionResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.EventHubs.EventHubsPrivateEndpointConnectionResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetNamespaceAuthorizationRuleResource">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.EventHubs.NamespaceAuthorizationRuleResource GetNamespaceAuthorizationRuleResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.EventHubs.NamespaceAuthorizationRuleResource GetNamespaceAuthorizationRuleResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
@@ -715,35 +744,6 @@
             You can use <see cref="M:Azure.ResourceManager.EventHubs.NetworkRuleSetResource.CreateResourceIdentifier(System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.EventHubs.NetworkRuleSetResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
             </summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.EventHubs.NetworkRuleSetResource" /> object. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetPrivateEndpointConnectionResource">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.EventHubs.PrivateEndpointConnectionResource GetPrivateEndpointConnectionResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.EventHubs.PrivateEndpointConnectionResource GetPrivateEndpointConnectionResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.EventHubsExtensions.GetPrivateEndpointConnectionResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetPrivateEndpointConnectionResource (client As ArmClient, id As ResourceIdentifier) As PrivateEndpointConnectionResource" />
-      <MemberSignature Language="F#" Value="static member GetPrivateEndpointConnectionResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.EventHubs.PrivateEndpointConnectionResource" Usage="Azure.ResourceManager.EventHubs.EventHubsExtensions.GetPrivateEndpointConnectionResource (client, id)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.EventHubs.PrivateEndpointConnectionResource</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
-        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
-      </Parameters>
-      <Docs>
-        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
-        <param name="id"> The resource ID of the resource to get. </param>
-        <summary>
-            Gets an object representing a <see cref="T:Azure.ResourceManager.EventHubs.PrivateEndpointConnectionResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.EventHubs.PrivateEndpointConnectionResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.EventHubs.PrivateEndpointConnectionResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
-            </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.EventHubs.PrivateEndpointConnectionResource" /> object. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

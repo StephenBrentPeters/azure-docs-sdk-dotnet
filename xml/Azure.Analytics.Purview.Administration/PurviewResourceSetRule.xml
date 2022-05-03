@@ -34,11 +34,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateResourceSetRule">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response CreateOrUpdateResourceSetRule (Azure.Core.RequestContent content, Azure.RequestOptions options = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response CreateOrUpdateResourceSetRule(class Azure.Core.RequestContent content, class Azure.RequestOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Administration.PurviewResourceSetRule.CreateOrUpdateResourceSetRule(Azure.Core.RequestContent,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateResourceSetRule (content As RequestContent, Optional options As RequestOptions = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateResourceSetRule : Azure.Core.RequestContent * Azure.RequestOptions -&gt; Azure.Response&#xA;override this.CreateOrUpdateResourceSetRule : Azure.Core.RequestContent * Azure.RequestOptions -&gt; Azure.Response" Usage="purviewResourceSetRule.CreateOrUpdateResourceSetRule (content, options)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response CreateOrUpdateResourceSetRule (Azure.Core.RequestContent content, Azure.RequestContext context = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response CreateOrUpdateResourceSetRule(class Azure.Core.RequestContent content, class Azure.RequestContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Administration.PurviewResourceSetRule.CreateOrUpdateResourceSetRule(Azure.Core.RequestContent,Azure.RequestContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateResourceSetRule (content As RequestContent, Optional context As RequestContext = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateResourceSetRule : Azure.Core.RequestContent * Azure.RequestContext -&gt; Azure.Response&#xA;override this.CreateOrUpdateResourceSetRule : Azure.Core.RequestContent * Azure.RequestContext -&gt; Azure.Response" Usage="purviewResourceSetRule.CreateOrUpdateResourceSetRule (content, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Administration</AssemblyName>
@@ -49,11 +49,11 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="content" Type="Azure.Core.RequestContent" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
+        <Parameter Name="context" Type="Azure.RequestContext" />
       </Parameters>
       <Docs>
         <param name="content"> The content to send as the body of the request. </param>
-        <param name="options"> The request options. </param>
+        <param name="context"> The request context, which can override default behaviors on the request on a per-call basis. </param>
         <summary> Creates or updates an resource set config. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -267,11 +267,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateResourceSetRuleAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; CreateOrUpdateResourceSetRuleAsync (Azure.Core.RequestContent content, Azure.RequestOptions options = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; CreateOrUpdateResourceSetRuleAsync(class Azure.Core.RequestContent content, class Azure.RequestOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Administration.PurviewResourceSetRule.CreateOrUpdateResourceSetRuleAsync(Azure.Core.RequestContent,Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateResourceSetRuleAsync (content As RequestContent, Optional options As RequestOptions = Nothing) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateResourceSetRuleAsync : Azure.Core.RequestContent * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.CreateOrUpdateResourceSetRuleAsync : Azure.Core.RequestContent * Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewResourceSetRule.CreateOrUpdateResourceSetRuleAsync (content, options)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; CreateOrUpdateResourceSetRuleAsync (Azure.Core.RequestContent content, Azure.RequestContext context = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; CreateOrUpdateResourceSetRuleAsync(class Azure.Core.RequestContent content, class Azure.RequestContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Administration.PurviewResourceSetRule.CreateOrUpdateResourceSetRuleAsync(Azure.Core.RequestContent,Azure.RequestContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateResourceSetRuleAsync (content As RequestContent, Optional context As RequestContext = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateResourceSetRuleAsync : Azure.Core.RequestContent * Azure.RequestContext -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.CreateOrUpdateResourceSetRuleAsync : Azure.Core.RequestContent * Azure.RequestContext -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewResourceSetRule.CreateOrUpdateResourceSetRuleAsync (content, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Administration</AssemblyName>
@@ -282,11 +282,11 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="content" Type="Azure.Core.RequestContent" />
-        <Parameter Name="options" Type="Azure.RequestOptions" />
+        <Parameter Name="context" Type="Azure.RequestContext" />
       </Parameters>
       <Docs>
         <param name="content"> The content to send as the body of the request. </param>
-        <param name="options"> The request options. </param>
+        <param name="context"> The request context, which can override default behaviors on the request on a per-call basis. </param>
         <summary> Creates or updates an resource set config. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -500,11 +500,11 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteResourceSetRule">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response DeleteResourceSetRule (Azure.RequestOptions options = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response DeleteResourceSetRule(class Azure.RequestOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Administration.PurviewResourceSetRule.DeleteResourceSetRule(Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteResourceSetRule (Optional options As RequestOptions = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="abstract member DeleteResourceSetRule : Azure.RequestOptions -&gt; Azure.Response&#xA;override this.DeleteResourceSetRule : Azure.RequestOptions -&gt; Azure.Response" Usage="purviewResourceSetRule.DeleteResourceSetRule options" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response DeleteResourceSetRule (Azure.RequestContext context = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response DeleteResourceSetRule(class Azure.RequestContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Administration.PurviewResourceSetRule.DeleteResourceSetRule(Azure.RequestContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteResourceSetRule (Optional context As RequestContext = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member DeleteResourceSetRule : Azure.RequestContext -&gt; Azure.Response&#xA;override this.DeleteResourceSetRule : Azure.RequestContext -&gt; Azure.Response" Usage="purviewResourceSetRule.DeleteResourceSetRule context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Administration</AssemblyName>
@@ -514,10 +514,10 @@
         <ReturnType>Azure.Response</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="options" Type="Azure.RequestOptions" />
+        <Parameter Name="context" Type="Azure.RequestContext" />
       </Parameters>
       <Docs>
-        <param name="options"> The request options. </param>
+        <param name="context"> The request context, which can override default behaviors on the request on a per-call basis. </param>
         <summary> Deletes a ResourceSetRuleConfig resource. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -541,11 +541,11 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteResourceSetRuleAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; DeleteResourceSetRuleAsync (Azure.RequestOptions options = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; DeleteResourceSetRuleAsync(class Azure.RequestOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Administration.PurviewResourceSetRule.DeleteResourceSetRuleAsync(Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteResourceSetRuleAsync (Optional options As RequestOptions = Nothing) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member DeleteResourceSetRuleAsync : Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.DeleteResourceSetRuleAsync : Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewResourceSetRule.DeleteResourceSetRuleAsync options" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; DeleteResourceSetRuleAsync (Azure.RequestContext context = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; DeleteResourceSetRuleAsync(class Azure.RequestContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Administration.PurviewResourceSetRule.DeleteResourceSetRuleAsync(Azure.RequestContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteResourceSetRuleAsync (Optional context As RequestContext = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteResourceSetRuleAsync : Azure.RequestContext -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.DeleteResourceSetRuleAsync : Azure.RequestContext -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewResourceSetRule.DeleteResourceSetRuleAsync context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Administration</AssemblyName>
@@ -555,10 +555,10 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="options" Type="Azure.RequestOptions" />
+        <Parameter Name="context" Type="Azure.RequestContext" />
       </Parameters>
       <Docs>
-        <param name="options"> The request options. </param>
+        <param name="context"> The request context, which can override default behaviors on the request on a per-call basis. </param>
         <summary> Deletes a ResourceSetRuleConfig resource. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -582,11 +582,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetResourceSetRule">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response GetResourceSetRule (Azure.RequestOptions options);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetResourceSetRule(class Azure.RequestOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Administration.PurviewResourceSetRule.GetResourceSetRule(Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetResourceSetRule (options As RequestOptions) As Response" />
-      <MemberSignature Language="F#" Value="abstract member GetResourceSetRule : Azure.RequestOptions -&gt; Azure.Response&#xA;override this.GetResourceSetRule : Azure.RequestOptions -&gt; Azure.Response" Usage="purviewResourceSetRule.GetResourceSetRule options" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response GetResourceSetRule (Azure.RequestContext context = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetResourceSetRule(class Azure.RequestContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Administration.PurviewResourceSetRule.GetResourceSetRule(Azure.RequestContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetResourceSetRule (Optional context As RequestContext = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member GetResourceSetRule : Azure.RequestContext -&gt; Azure.Response&#xA;override this.GetResourceSetRule : Azure.RequestContext -&gt; Azure.Response" Usage="purviewResourceSetRule.GetResourceSetRule context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Administration</AssemblyName>
@@ -596,10 +596,10 @@
         <ReturnType>Azure.Response</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="options" Type="Azure.RequestOptions" />
+        <Parameter Name="context" Type="Azure.RequestContext" />
       </Parameters>
       <Docs>
-        <param name="options"> The request options. </param>
+        <param name="context"> The request context, which can override default behaviors on the request on a per-call basis. </param>
         <summary> Get a resource set config service model. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -717,11 +717,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetResourceSetRuleAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetResourceSetRuleAsync (Azure.RequestOptions options);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetResourceSetRuleAsync(class Azure.RequestOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Administration.PurviewResourceSetRule.GetResourceSetRuleAsync(Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetResourceSetRuleAsync (options As RequestOptions) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member GetResourceSetRuleAsync : Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetResourceSetRuleAsync : Azure.RequestOptions -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewResourceSetRule.GetResourceSetRuleAsync options" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; GetResourceSetRuleAsync (Azure.RequestContext context = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; GetResourceSetRuleAsync(class Azure.RequestContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Administration.PurviewResourceSetRule.GetResourceSetRuleAsync(Azure.RequestContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetResourceSetRuleAsync (Optional context As RequestContext = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member GetResourceSetRuleAsync : Azure.RequestContext -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.GetResourceSetRuleAsync : Azure.RequestContext -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="purviewResourceSetRule.GetResourceSetRuleAsync context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Administration</AssemblyName>
@@ -731,10 +731,10 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="options" Type="Azure.RequestOptions" />
+        <Parameter Name="context" Type="Azure.RequestContext" />
       </Parameters>
       <Docs>
-        <param name="options"> The request options. </param>
+        <param name="context"> The request context, which can override default behaviors on the request on a per-call basis. </param>
         <summary> Get a resource set config service model. </summary>
         <returns>To be added.</returns>
         <remarks>

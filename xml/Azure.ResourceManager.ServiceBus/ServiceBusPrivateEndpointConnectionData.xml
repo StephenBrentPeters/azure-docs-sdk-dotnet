@@ -1,0 +1,97 @@
+<Type Name="ServiceBusPrivateEndpointConnectionData" FullName="Azure.ResourceManager.ServiceBus.ServiceBusPrivateEndpointConnectionData">
+  <TypeSignature Language="C#" Value="public class ServiceBusPrivateEndpointConnectionData : Azure.ResourceManager.Models.ResourceData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServiceBusPrivateEndpointConnectionData extends Azure.ResourceManager.Models.ResourceData" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.ServiceBus.ServiceBusPrivateEndpointConnectionData" />
+  <TypeSignature Language="VB.NET" Value="Public Class ServiceBusPrivateEndpointConnectionData&#xA;Inherits ResourceData" />
+  <TypeSignature Language="F#" Value="type ServiceBusPrivateEndpointConnectionData = class&#xA;    inherit ResourceData" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.ServiceBus</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.ResourceManager.Models.ResourceData</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> A class representing the ServiceBusPrivateEndpointConnection data model. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServiceBusPrivateEndpointConnectionData ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceBus.ServiceBusPrivateEndpointConnectionData.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ServiceBus</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of ServiceBusPrivateEndpointConnectionData. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrivateEndpointId">
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier PrivateEndpointId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier PrivateEndpointId" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ServiceBus.ServiceBusPrivateEndpointConnectionData.PrivateEndpointId" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrivateEndpointId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.PrivateEndpointId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.ServiceBus.ServiceBusPrivateEndpointConnectionData.PrivateEndpointId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ServiceBus</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Gets or sets Id. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrivateLinkServiceConnectionState">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.ServiceBus.Models.ConnectionState PrivateLinkServiceConnectionState { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ServiceBus.Models.ConnectionState PrivateLinkServiceConnectionState" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ServiceBus.ServiceBusPrivateEndpointConnectionData.PrivateLinkServiceConnectionState" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrivateLinkServiceConnectionState As ConnectionState" />
+      <MemberSignature Language="F#" Value="member this.PrivateLinkServiceConnectionState : Azure.ResourceManager.ServiceBus.Models.ConnectionState with get, set" Usage="Azure.ResourceManager.ServiceBus.ServiceBusPrivateEndpointConnectionData.PrivateLinkServiceConnectionState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ServiceBus</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ServiceBus.Models.ConnectionState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Details about the state of the connection. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProvisioningState">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.ServiceBus.Models.EndpointProvisioningState? ProvisioningState { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.ServiceBus.Models.EndpointProvisioningState&gt; ProvisioningState" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ServiceBus.ServiceBusPrivateEndpointConnectionData.ProvisioningState" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProvisioningState As Nullable(Of EndpointProvisioningState)" />
+      <MemberSignature Language="F#" Value="member this.ProvisioningState : Nullable&lt;Azure.ResourceManager.ServiceBus.Models.EndpointProvisioningState&gt; with get, set" Usage="Azure.ResourceManager.ServiceBus.ServiceBusPrivateEndpointConnectionData.ProvisioningState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ServiceBus</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.ServiceBus.Models.EndpointProvisioningState&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Provisioning state of the Private Endpoint Connection. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

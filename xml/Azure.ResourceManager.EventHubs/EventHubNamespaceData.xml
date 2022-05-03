@@ -238,18 +238,18 @@
       </Docs>
     </Member>
     <Member MemberName="PrivateEndpointConnections">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.ResourceManager.EventHubs.PrivateEndpointConnectionData&gt; PrivateEndpointConnections { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Azure.ResourceManager.EventHubs.PrivateEndpointConnectionData&gt; PrivateEndpointConnections" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.ResourceManager.EventHubs.EventHubsPrivateEndpointConnectionData&gt; PrivateEndpointConnections { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Azure.ResourceManager.EventHubs.EventHubsPrivateEndpointConnectionData&gt; PrivateEndpointConnections" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.EventHubs.EventHubNamespaceData.PrivateEndpointConnections" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrivateEndpointConnections As IList(Of PrivateEndpointConnectionData)" />
-      <MemberSignature Language="F#" Value="member this.PrivateEndpointConnections : System.Collections.Generic.IList&lt;Azure.ResourceManager.EventHubs.PrivateEndpointConnectionData&gt;" Usage="Azure.ResourceManager.EventHubs.EventHubNamespaceData.PrivateEndpointConnections" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrivateEndpointConnections As IList(Of EventHubsPrivateEndpointConnectionData)" />
+      <MemberSignature Language="F#" Value="member this.PrivateEndpointConnections : System.Collections.Generic.IList&lt;Azure.ResourceManager.EventHubs.EventHubsPrivateEndpointConnectionData&gt;" Usage="Azure.ResourceManager.EventHubs.EventHubNamespaceData.PrivateEndpointConnections" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Collections.Generic.IList&lt;Azure.ResourceManager.EventHubs.PrivateEndpointConnectionData&gt;</ReturnType>
+        <ReturnType>System.Collections.Generic.IList&lt;Azure.ResourceManager.EventHubs.EventHubsPrivateEndpointConnectionData&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> List of private endpoint connections. </summary>

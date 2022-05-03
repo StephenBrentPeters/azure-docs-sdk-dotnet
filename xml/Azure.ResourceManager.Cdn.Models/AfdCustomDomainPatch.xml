@@ -53,19 +53,19 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="PreValidatedCustomDomainResourceIdId">
-      <MemberSignature Language="C#" Value="public string PreValidatedCustomDomainResourceIdId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string PreValidatedCustomDomainResourceIdId" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Cdn.Models.AfdCustomDomainPatch.PreValidatedCustomDomainResourceIdId" />
-      <MemberSignature Language="VB.NET" Value="Public Property PreValidatedCustomDomainResourceIdId As String" />
-      <MemberSignature Language="F#" Value="member this.PreValidatedCustomDomainResourceIdId : string with get, set" Usage="Azure.ResourceManager.Cdn.Models.AfdCustomDomainPatch.PreValidatedCustomDomainResourceIdId" />
+    <Member MemberName="PreValidatedCustomDomainResourceId">
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier PreValidatedCustomDomainResourceId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier PreValidatedCustomDomainResourceId" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Cdn.Models.AfdCustomDomainPatch.PreValidatedCustomDomainResourceId" />
+      <MemberSignature Language="VB.NET" Value="Public Property PreValidatedCustomDomainResourceId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.PreValidatedCustomDomainResourceId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Cdn.Models.AfdCustomDomainPatch.PreValidatedCustomDomainResourceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Resource ID. </summary>

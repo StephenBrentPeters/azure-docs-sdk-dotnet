@@ -105,7 +105,10 @@
                Initializes a new instance of the <see cref="M:Azure.Messaging.EventHubs.EventHubsModelFactory.EventDataBatch(System.Int64,System.Collections.Generic.IList{Azure.Messaging.EventHubs.EventData},Azure.Messaging.EventHubs.Producer.CreateBatchOptions,System.Func{Azure.Messaging.EventHubs.EventData,System.Boolean})" /> class.
              </summary>
         <returns>The <see cref="M:Azure.Messaging.EventHubs.EventHubsModelFactory.EventDataBatch(System.Int64,System.Collections.Generic.IList{Azure.Messaging.EventHubs.EventData},Azure.Messaging.EventHubs.Producer.CreateBatchOptions,System.Func{Azure.Messaging.EventHubs.EventData,System.Boolean})" /> instance that was created.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+               It is important to note that the batch will keep an internal copy of events accepted by <see cref="M:Azure.Messaging.EventHubs.Producer.EventDataBatch.TryAdd(Azure.Messaging.EventHubs.EventData)" />; changes made to
+               <paramref name="batchEventStore" /> outside of the batch will not be reflected by the batch.
+             </remarks>
       </Docs>
     </Member>
     <Member MemberName="EventHubProperties">

@@ -137,28 +137,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="MetadataPropertySourceTime">
-      <MemberSignature Language="C#" Value="public const string MetadataPropertySourceTime;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal string MetadataPropertySourceTime" />
-      <MemberSignature Language="DocId" Value="F:Azure.DigitalTwins.Core.DigitalTwinsJsonPropertyNames.MetadataPropertySourceTime" />
-      <MemberSignature Language="VB.NET" Value="Public Const MetadataPropertySourceTime As String " />
-      <MemberSignature Language="F#" Value="val mutable MetadataPropertySourceTime : string" Usage="Azure.DigitalTwins.Core.DigitalTwinsJsonPropertyNames.MetadataPropertySourceTime" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.DigitalTwins.Core</AssemblyName>
-        <AssemblyVersion>1.4.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            The time the value of a digital twin property was sourced, used in the $metadata
-            object on a digital twin or component about their properties.
-            </summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="RelationshipId">
       <MemberSignature Language="C#" Value="public const string RelationshipId;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string RelationshipId" />

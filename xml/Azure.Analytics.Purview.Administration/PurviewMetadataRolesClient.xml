@@ -60,11 +60,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetMetadataRoles">
-      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;BinaryData&gt; GetMetadataRoles (Azure.RequestOptions options);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class System.BinaryData&gt; GetMetadataRoles(class Azure.RequestOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Administration.PurviewMetadataRolesClient.GetMetadataRoles(Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMetadataRoles (options As RequestOptions) As Pageable(Of BinaryData)" />
-      <MemberSignature Language="F#" Value="abstract member GetMetadataRoles : Azure.RequestOptions -&gt; Azure.Pageable&lt;BinaryData&gt;&#xA;override this.GetMetadataRoles : Azure.RequestOptions -&gt; Azure.Pageable&lt;BinaryData&gt;" Usage="purviewMetadataRolesClient.GetMetadataRoles options" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;BinaryData&gt; GetMetadataRoles (Azure.RequestContext context = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class System.BinaryData&gt; GetMetadataRoles(class Azure.RequestContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Administration.PurviewMetadataRolesClient.GetMetadataRoles(Azure.RequestContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMetadataRoles (Optional context As RequestContext = Nothing) As Pageable(Of BinaryData)" />
+      <MemberSignature Language="F#" Value="abstract member GetMetadataRoles : Azure.RequestContext -&gt; Azure.Pageable&lt;BinaryData&gt;&#xA;override this.GetMetadataRoles : Azure.RequestContext -&gt; Azure.Pageable&lt;BinaryData&gt;" Usage="purviewMetadataRolesClient.GetMetadataRoles context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Administration</AssemblyName>
@@ -74,10 +74,10 @@
         <ReturnType>Azure.Pageable&lt;System.BinaryData&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="options" Type="Azure.RequestOptions" />
+        <Parameter Name="context" Type="Azure.RequestContext" />
       </Parameters>
       <Docs>
-        <param name="options"> The request options. </param>
+        <param name="context"> The request context, which can override default behaviors on the request on a per-call basis. </param>
         <summary> Lists roles for Purview Account. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -115,11 +115,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetMetadataRolesAsync">
-      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;BinaryData&gt; GetMetadataRolesAsync (Azure.RequestOptions options);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class System.BinaryData&gt; GetMetadataRolesAsync(class Azure.RequestOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Administration.PurviewMetadataRolesClient.GetMetadataRolesAsync(Azure.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMetadataRolesAsync (options As RequestOptions) As AsyncPageable(Of BinaryData)" />
-      <MemberSignature Language="F#" Value="abstract member GetMetadataRolesAsync : Azure.RequestOptions -&gt; Azure.AsyncPageable&lt;BinaryData&gt;&#xA;override this.GetMetadataRolesAsync : Azure.RequestOptions -&gt; Azure.AsyncPageable&lt;BinaryData&gt;" Usage="purviewMetadataRolesClient.GetMetadataRolesAsync options" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;BinaryData&gt; GetMetadataRolesAsync (Azure.RequestContext context = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class System.BinaryData&gt; GetMetadataRolesAsync(class Azure.RequestContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Analytics.Purview.Administration.PurviewMetadataRolesClient.GetMetadataRolesAsync(Azure.RequestContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMetadataRolesAsync (Optional context As RequestContext = Nothing) As AsyncPageable(Of BinaryData)" />
+      <MemberSignature Language="F#" Value="abstract member GetMetadataRolesAsync : Azure.RequestContext -&gt; Azure.AsyncPageable&lt;BinaryData&gt;&#xA;override this.GetMetadataRolesAsync : Azure.RequestContext -&gt; Azure.AsyncPageable&lt;BinaryData&gt;" Usage="purviewMetadataRolesClient.GetMetadataRolesAsync context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Analytics.Purview.Administration</AssemblyName>
@@ -129,10 +129,10 @@
         <ReturnType>Azure.AsyncPageable&lt;System.BinaryData&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="options" Type="Azure.RequestOptions" />
+        <Parameter Name="context" Type="Azure.RequestContext" />
       </Parameters>
       <Docs>
-        <param name="options"> The request options. </param>
+        <param name="context"> The request context, which can override default behaviors on the request on a per-call basis. </param>
         <summary> Lists roles for Purview Account. </summary>
         <returns>To be added.</returns>
         <remarks>

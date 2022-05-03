@@ -127,8 +127,21 @@
             </summary>
         <returns>The deserialized data.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.FormatException">Thrown if the content type is not in the expected format.</exception>
         <exception cref="T:System.InvalidOperationException">Thrown if an attempt is made to deserialize non-Avro data.</exception>
+        <exception cref="T:System.FormatException">
+              The ContentType is not in the expected format. The ContentType is expected to be 'avro/binary+schema-id', where 'schema-id' is
+              the Schema Registry schema ID.
+            </exception>
+        <exception cref="T:System.ArgumentException">
+              The <paramref name="dataType" /> is not convertible to ISpecificRecord or GenericRecord.
+            </exception>
+        <exception cref="T:Azure.RequestFailedException">
+              An error occurred while attempting to communicate with the Schema Registry service.
+            </exception>
+        <exception cref="T:System.Exception">
+              The schema from <paramref name="dataType" /> was not compatible with the schema used to serialize the data, or the schema itself was invalid.
+              The <see cref="P:System.Exception.InnerException" /> will contain the underlying exception from the Apache Avro library.
+            </exception>
       </Docs>
     </Member>
     <Member MemberName="Deserialize&lt;TData&gt;">
@@ -161,8 +174,21 @@
             </summary>
         <returns>The deserialized data.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.FormatException">Thrown if the content type is not in the expected format.</exception>
         <exception cref="T:System.InvalidOperationException">Thrown if an attempt is made to deserialize non-Avro data.</exception>
+        <exception cref="T:System.FormatException">
+              The ContentType is not in the expected format. The ContentType is expected to be 'avro/binary+schema-id', where 'schema-id' is
+              the Schema Registry schema ID.
+            </exception>
+        <exception cref="T:System.ArgumentException">
+              The <typeparamref name="TData" /> type is not convertible to ISpecificRecord or GenericRecord.
+            </exception>
+        <exception cref="T:Azure.RequestFailedException">
+              An error occurred while attempting to communicate with the Schema Registry service.
+            </exception>
+        <exception cref="T:System.Exception">
+              The schema from <typeparamref name="TData" /> was not compatible with the schema used to serialize the data, or the schema itself was invalid.
+              The <see cref="P:System.Exception.InnerException" /> will contain the underlying exception from the Apache Avro library.
+            </exception>
       </Docs>
     </Member>
     <Member MemberName="DeserializeAsync">
@@ -193,8 +219,21 @@
             </summary>
         <returns>The deserialized data.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.FormatException">Thrown if the content type is not in the expected format.</exception>
         <exception cref="T:System.InvalidOperationException">Thrown if an attempt is made to deserialize non-Avro data.</exception>
+        <exception cref="T:System.FormatException">
+              The ContentType is not in the expected format. The ContentType is expected to be 'avro/binary+schema-id', where 'schema-id' is
+              the Schema Registry schema ID.
+            </exception>
+        <exception cref="T:System.ArgumentException">
+              The <paramref name="dataType" /> is not convertible to ISpecificRecord or GenericRecord.
+            </exception>
+        <exception cref="T:Azure.RequestFailedException">
+              An error occurred while attempting to communicate with the Schema Registry service.
+            </exception>
+        <exception cref="T:System.Exception">
+              The schema from <paramref name="dataType" /> was not compatible with the schema used to serialize the data, or the schema itself was invalid.
+              The <see cref="P:System.Exception.InnerException" /> will contain the underlying exception from the Apache Avro library.
+            </exception>
       </Docs>
     </Member>
     <Member MemberName="DeserializeAsync&lt;TData&gt;">
@@ -227,8 +266,21 @@
             </summary>
         <returns>The deserialized data.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.FormatException">Thrown if the content type is not in the expected format.</exception>
         <exception cref="T:System.InvalidOperationException">Thrown if an attempt is made to deserialize non-Avro data.</exception>
+        <exception cref="T:System.FormatException">
+              The ContentType is not in the expected format. The ContentType is expected to be 'avro/binary+schema-id', where 'schema-id' is
+              the Schema Registry schema ID.
+            </exception>
+        <exception cref="T:System.ArgumentException">
+              The <typeparamref name="TData" /> type is not convertible to ISpecificRecord or GenericRecord.
+            </exception>
+        <exception cref="T:Azure.RequestFailedException">
+              An error occurred while attempting to communicate with the Schema Registry service.
+            </exception>
+        <exception cref="T:System.Exception">
+              The schema from <typeparamref name="TData" /> was not compatible with the schema used to serialize the data, or the schema itself was invalid.
+              The <see cref="P:System.Exception.InnerException" /> will contain the underlying exception from the Apache Avro library.
+            </exception>
       </Docs>
     </Member>
     <Member MemberName="Serialize">
@@ -265,6 +317,20 @@
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">
+              This can occur if the <code>groupName</code> was not specified when constructing the <see cref="T:Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.SchemaRegistryAvroSerializer" />.
+              It can also occur if the <paramref name="messageType" /> does not have a public parameterless constructor.
+            </exception>
+        <exception cref="T:System.ArgumentException">
+              The <paramref name="dataType" /> is not convertible to ISpecificRecord or GenericRecord.
+            </exception>
+        <exception cref="T:Azure.RequestFailedException">
+              An error occurred while attempting to communicate with the Schema Registry service.
+            </exception>
+        <exception cref="T:System.Exception">
+              The data did not adhere to the Avro schema, or the schema itself was invalid.
+              The <see cref="P:System.Exception.InnerException" /> will contain the underlying exception from the Apache Avro library.
+            </exception>
       </Docs>
     </Member>
     <Member MemberName="Serialize&lt;TEnvelope,TData&gt;">
@@ -305,6 +371,20 @@
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">
+              This can occur if the <code>groupName</code> was not specified when constructing the <see cref="T:Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.SchemaRegistryAvroSerializer" />.
+              It can also occur if the <typeparamref name="TEnvelope" /> type does not have a public parameterless constructor.
+            </exception>
+        <exception cref="T:System.ArgumentException">
+              The <typeparamref name="TData" /> is not convertible to ISpecificRecord or GenericRecord.
+            </exception>
+        <exception cref="T:Azure.RequestFailedException">
+              An error occurred while attempting to communicate with the Schema Registry service.
+            </exception>
+        <exception cref="T:System.Exception">
+              The data did not adhere to the Avro schema, or the schema itself was invalid.
+              The <see cref="P:System.Exception.InnerException" /> will contain the underlying exception from the Apache Avro library.
+            </exception>
       </Docs>
     </Member>
     <Member MemberName="SerializeAsync">
@@ -341,6 +421,20 @@
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">
+              This can occur if the <code>groupName</code> was not specified when constructing the <see cref="T:Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.SchemaRegistryAvroSerializer" />.
+              It can also occur if the <paramref name="messageType" /> does not have a public parameterless constructor.
+            </exception>
+        <exception cref="T:System.ArgumentException">
+              The <paramref name="dataType" /> is not convertible to ISpecificRecord or GenericRecord.
+            </exception>
+        <exception cref="T:Azure.RequestFailedException">
+              An error occurred while attempting to communicate with the Schema Registry service.
+            </exception>
+        <exception cref="T:System.Exception">
+              The data did not adhere to the Avro schema, or the schema itself was invalid.
+              The <see cref="P:System.Exception.InnerException" /> will contain the underlying exception from the Apache Avro library.
+            </exception>
       </Docs>
     </Member>
     <Member MemberName="SerializeAsync&lt;TEnvelope,TData&gt;">
@@ -381,6 +475,20 @@
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">
+              This can occur if the <code>groupName</code> was not specified when constructing the <see cref="T:Microsoft.Azure.Data.SchemaRegistry.ApacheAvro.SchemaRegistryAvroSerializer" />.
+              It can also occur if the <typeparamref name="TEnvelope" /> type does not have a public parameterless constructor.
+            </exception>
+        <exception cref="T:System.ArgumentException">
+              The <typeparamref name="TData" /> is not convertible to ISpecificRecord or GenericRecord.
+            </exception>
+        <exception cref="T:Azure.RequestFailedException">
+              An error occurred while attempting to communicate with the Schema Registry service.
+            </exception>
+        <exception cref="T:System.Exception">
+              The data did not adhere to the Avro schema, or the schema itself was invalid.
+              The <see cref="P:System.Exception.InnerException" /> will contain the underlying exception from the Apache Avro library.
+            </exception>
       </Docs>
     </Member>
   </Members>

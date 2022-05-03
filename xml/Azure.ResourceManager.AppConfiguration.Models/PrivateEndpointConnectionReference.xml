@@ -54,18 +54,18 @@
       </Docs>
     </Member>
     <Member MemberName="PrivateLinkServiceConnectionState">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.AppConfiguration.Models.PrivateLinkServiceConnectionState PrivateLinkServiceConnectionState { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.AppConfiguration.Models.PrivateLinkServiceConnectionState PrivateLinkServiceConnectionState" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.AppConfiguration.Models.AppConfigurationPrivateLinkServiceConnectionState PrivateLinkServiceConnectionState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.AppConfiguration.Models.AppConfigurationPrivateLinkServiceConnectionState PrivateLinkServiceConnectionState" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.AppConfiguration.Models.PrivateEndpointConnectionReference.PrivateLinkServiceConnectionState" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrivateLinkServiceConnectionState As PrivateLinkServiceConnectionState" />
-      <MemberSignature Language="F#" Value="member this.PrivateLinkServiceConnectionState : Azure.ResourceManager.AppConfiguration.Models.PrivateLinkServiceConnectionState" Usage="Azure.ResourceManager.AppConfiguration.Models.PrivateEndpointConnectionReference.PrivateLinkServiceConnectionState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrivateLinkServiceConnectionState As AppConfigurationPrivateLinkServiceConnectionState" />
+      <MemberSignature Language="F#" Value="member this.PrivateLinkServiceConnectionState : Azure.ResourceManager.AppConfiguration.Models.AppConfigurationPrivateLinkServiceConnectionState" Usage="Azure.ResourceManager.AppConfiguration.Models.PrivateEndpointConnectionReference.PrivateLinkServiceConnectionState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.AppConfiguration</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.AppConfiguration.Models.PrivateLinkServiceConnectionState</ReturnType>
+        <ReturnType>Azure.ResourceManager.AppConfiguration.Models.AppConfigurationPrivateLinkServiceConnectionState</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> A collection of information about the state of the connection between service consumer and provider. </summary>
